@@ -37,7 +37,7 @@ div#headbar {
 	}
 
 a {
-	color:green;
+	color:purple;
 	text-decoration:none;
 	display:block;
 	text-align:center;
@@ -50,6 +50,14 @@ div#bottom {
 	background-color:white;
 	border-top:1px solid grey;
 	}
+
+a.block_head{
+    text-align:left;
+    font-size:20px;
+    //font-weight:bold;
+    color: purple;
+    margin-bottom: 1px
+}
 
 </style>
 </head>
@@ -64,30 +72,90 @@ div#bottom {
 <div id = 'navbar'>
 <table style = 'width:800px;border:0px solid red'>
 <tr>
-<td><a href = 'Intro.html' target = 'TableC'>ABOUT</a></td>
-<td><a href = 'Research.html' target = 'TableC'>RESEARCH</a></td>
-<td><a href = 'Publications.html' target = 'TableC'>PUBLICATIONS</a></td>
-<td><a href = 'Activities.html' target = 'TableC'>ACTIVITIES</a></td>
-<td><a href = 'Contact.html' target = 'TableC'>CONTACT</a></td>
+<td><a href = 'Intro.html' target = 'TableC'>ABOUT ME</a></td>
+<td><a href = '#research_interests'>RESEARCH INTERESTS</a></td>
+<td><a href = '#selected_publications'>PUBLICATIONS</a></td>
+<td><a href = '#teching_experiences'>TEACHING EXPERIENCES</a></td>
+<td><a href = '#honors'>HONORS</a></td>
 </tr>
 </table>
 </div>
 
 </div>
 
-<div id = 'content'>
-<div id = 'left' style = 'width:120px;border:0px solid red;padding:30px;'>
-<image src = './images/me.jpg' width = '120px'>
-</div>
+    <div id = 'content'>
+        <div id = 'left' style = 'width:120px;border:0px solid red;padding:30px;'>
+            <image src = './images/me.jpg' width = '120px'>
+        </div>
 
-<div id = 'right' style = 'width:560px;border:0px solid green;padding:30px;line-height:150%;'>
-<iframe name = 'TableC' src = 'Intro.html' style = 'width:560px;' height = '343px' marginheight = '5px' frameborder = 0 scrolling = 'no'>Sorry! iFrame is not supported by your browser.</iframe>
-</div>
-</div>
+        <div id = 'right' style = 'width:560px;border:0px solid green;padding:30px;line-height:150%;'>
+            <iframe name = 'TableC' src = 'Intro.html' style = 'width:560px;' height = '200px' marginheight = '5px' frameborder = 0 scrolling = 'no'>Sorry! iFrame is not supported by your browser.</iframe>
+        </div>
+    </div>
 
-<div id = 'bottom'>
-<h1 style = 'color:black;font-size:15px;text-align:center;line-height:49px;'>Supported by QIAO Dong from 2020 to 2021.</h1>
-</div>
+    <div class="sec_block" style="width: 800px;border: 0 dashed purple;margin-bottom: 50px">
+        <a class = 'block_head' name = 'educational_background' style="font-style:italic;color:orange;">&nbsp;&nbsp;News</a>
+        <hr />
+        <ul style="font-size: 18px;">
+            <li><a style="display:inline">Aug 2021</a>: He registered as a 1st-year PhD student at The Chinese University of Hong Kong, Shenzhen. He feel lucky and happy, and he is willing to work hard for the coming academic semester!</li>
+        </ul>
+    </div>
+
+    <div class="sec_block" style="width: 800px">
+        <a class = 'block_head' name = 'educational_background'>&nbsp;&nbsp;Educational background</a>
+        <hr />
+        <ul style="font-size: 18px">
+            <li>2nd-year PhD student (The Chinese University of Hong Kong, Shenzhen)</li>
+            <li>Master of Management Science (Central South University)</li>
+            <li>Bachelor of Management Science (Zhengzhou University)</li>
+        </ul>
+    </div>
+
+    <div class="sec_block" style="width: 800px">
+        <a class = 'block_head' name = 'research_interests'>&nbsp;&nbsp;Research interests</a>
+        <hr />
+        <ul style="font-size: 18px">
+            <li>Unsupervised machine learning</li>
+            <li>Clustering</li>
+            <li>Federated learning</li>
+        </ul>
+    </div>
+
+    <div class="sec_block" style="width: 800px">
+        <a class = 'block_head' name = 'selected_publications'>&nbsp;&nbsp;Selected publications</a>
+        <hr />
+        <ul style="font-size: 18px">
+            <li>Dong Qiao, Kai-wen Shen, Jian-qiang Wang, Tie-li Wang, Multi-criteria PROMETHEE method based on possibility degree with Z-numbers under uncertain linguistic environment, Journal of Ambient Intelligence and Humanized Computing, 2020, 11(5): 2187-2201.</li>
+            <li>Dong Qiao, Yi-ting Wang, Jian-qiang Wang, Hanyang Luo, Lin Li. Likelihood-based qualitative flexible approach to ranking of Z-numbers in decision problems, Computational and Applied Mathematics, 2020, 39(2): 134.</li>
+            <li>Dong Qiao, Xiao-kang Wang, Jian-qiang Wang, Ke Chen, Cross entropy for discrete Z-numbers and its application in multi-criteria decision-making, International Journal of Fuzzy Systems, 2019, 21(6): 1786-1800.</li>
+            <li>Kai-wen Shen, Xiao-kang Wang, Dong Qiao, Jian-qiang Wang, Extended Z-MABAC method based on regret theory and directed distance for regional circular economy development program selection with Z-information, IEEE Transactions on Fuzzy Systems, 2020, 28(8): 1851-1863.</li>
+        </ul>
+    </div>
+
+    <div class="sec_block" style="width: 800px">
+        <a class = 'block_head' name = 'teching_experiences'>&nbsp;&nbsp;Teaching experiences</a>
+        <hr />
+        <ul style="font-size: 18px">
+            <li>DDA4210 Advanced Machine Learning (2023Spring), Teaching assistant</li>
+            <li>STA4001 Stochastic process (2022Autumn), Teaching assistant</li>
+            <li>DDA2001 Introduction to Data Science (2022Spring), Teaching assistant</li>
+            <li>CSC3001 Discrete Mathematics (2021Autumn), Teaching assistant</li>
+        </ul>
+    </div>
+
+    <div class="sec_block" style="width: 800px">
+        <a class = 'block_head' name = 'honors'>&nbsp;&nbsp;Honors</a>
+        <hr />
+        <ul style="font-size: 18px">
+            <li>June 2020: Excellent Graduates, Central South University</li>
+            <li>May 2020: Excellent Graduates, Hunan Province Education Department</li>
+            <li>December 2019: National Scholarship for Postgraduates, Ministry of Education</li>
+        </ul>
+    </div>
+
+    <div id = 'bottom'>
+        <h1 style = 'color:black;font-size:15px;text-align:center;line-height:49px;'>Supported by QIAO Dong from 2020 to 2022.</h1>
+    </div>
 </div>
 </body>
 </html>
